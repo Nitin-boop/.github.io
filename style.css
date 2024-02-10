@@ -253,6 +253,13 @@ header .info-text .scroll::before{
     }
 }
 
+@media (max-width: 400px) {
+    .card {
+        width: 100%; /* Ensure cards take up full width on small screens */
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+}
+
 .scroll-top{
     display: none;
     position: fixed;
