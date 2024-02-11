@@ -16,6 +16,10 @@ body{
     overflow-x: hidden;
 }
 
+/* Header */
+
+#more {display: none;}
+
 header{
     width: 100%;
     height: 100vh;
@@ -89,6 +93,8 @@ header .info-text .scroll::before{
     }
 }
 
+/* About */
+
 #about, #features{
     background-color: #2b2f4b;
     padding: 40px;
@@ -121,6 +127,14 @@ header .info-text .scroll::before{
 #about .header a:hover, #features .header a:hover{
     border-color: #fff;
     box-shadow: none;
+}
+
+#about .info #me #read-more:hover{
+    cursor: pointer;
+}
+
+#about .info #me #read-more{
+    color: rgb(20, 145, 241);
 }
 
 #about .card, #features .card{
@@ -164,11 +178,19 @@ header .info-text .scroll::before{
     line-height: 1.8rem;
 }
 
+#about .info p{
+    font-size: 1.1rem;
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Cards */
+
 #features .feature-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
 }
 
 #features .feature-cards .card{
@@ -176,7 +198,7 @@ header .info-text .scroll::before{
     flex-direction: column;
     align-items: center;
     flex: 1;
-    min-width: 350px;
+    margin-bottom: 1rem;
 }
 
 #features .feature-cards .card .info i{
@@ -195,13 +217,6 @@ header .info-text .scroll::before{
     font-size: 1.1rem;
 }
 
-#about .info p{
-    font-size: 1.1rem;
-    color: #fff;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 .card{
     background-color: #000000;
 }
@@ -215,17 +230,7 @@ header .info-text .scroll::before{
     padding-top: 2%;
 }
 
-#questions{
-    width: 100%;
-}
-
-#about .info #me{
-    text-align: justify;
-}
-
-#about{
-    padding-top: 5%;
-}
+/* Animation */
 
 .pacman {
     width: 40px;
@@ -247,18 +252,7 @@ header .info-text .scroll::before{
     }
 }
 
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-collapse {
-        justify-content: flex-end;
-    }
-}
-
-@media (max-width: 400px) {
-    .card {
-        width: 100%; /* Ensure cards take up full width on small screens */
-        margin-bottom: 20px; /* Adjust margin as needed */
-    }
-}
+/* Others */
 
 .scroll-top{
     display: none;
@@ -279,6 +273,12 @@ header .info-text .scroll::before{
 .scroll-top:hover{
     border-color: #fff;
     box-shadow: none;
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (max-width: 720px) {
