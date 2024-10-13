@@ -61,6 +61,10 @@ header .info-text h3{
     font-size: 1.5rem;
 }
 
+header .info-text h5{
+    font-size: 1.2rem;
+}
+
 header .info-text .scroll{
     position: absolute;
     bottom: 20%;
